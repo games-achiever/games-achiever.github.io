@@ -1,0 +1,123 @@
+body {
+	color: #959595;
+	font-family: sans-serif;
+	margin: 0;
+	background-color: rgb(19,42,44);
+}
+h1{
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.achievement-text{
+	color: teal; 
+	text-align: left;
+}
+	
+header {
+	font-size: 30px;
+	text-align: left;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://i.exophase.com/xbox/featured/l/0515j.jpg");
+	position: relative;
+}
+
+#menu li {
+	display:inline;
+	margin: 0;
+}
+
+a:link, a:visited {
+	color: #c2c2c2;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover {
+	color: white;
+}
+
+
+.header-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.invitation {
+	color: #ffffff;
+	text-align: center;
+	padding-left: 300px;
+	padding-right: 300px;
+	margin-top: 50px;
+}
+
+.container {
+	background-color: rgb(255, 254, 255);
+	text-align: left;
+	position: relative;
+	padding: 15px;
+	margin-right: 150px;
+	margin-left: 150px;
+}
+
+
+table, th, td{
+	border: 1px solid aliceblue;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.inline-pf {
+		background-color: #5f4f4f;
+		display: inline-block;
+		font-size: 11px;
+		color: #fff;
+		text-align: center;
+		border-radius: 2px;
+		padding-left: 4px;
+		padding-right: 4px;
+}
+
+aside {
+	font-style: italic;
+	font-size: 12px;
+}
+
+
+.cimg{
+	width:70%;
+	align-self: center;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+footer {
+	margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #666565;
+    color: #fff;
+}
+
+.footer-background{
+    background-image: url("../assets/footer_image.jpg");
+    max-height: 40%;
+    max-width: 100%;
+}
+
+
+
+
