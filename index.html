@@ -2,236 +2,95 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Exophase copy</title>
-        <link rel="shortcut icon" href="https://www.exophase.com/assets/zeal/_icons/favicon.ico" />
+        <title>Wolfor games</title>
+        <link rel="shortcut icon" href="assets/logo_round.png" />
         <link rel = "stylesheet" href = "css/custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for icons-->
     </head>
     <body>
         <header>
-            <nav>
-                <a href="https://www.exophase.com/" style="margin-left: 40px;
-                    margin-top: 40px;">
-                    <img src="https://www.exophase.com/assets/zeal/logos/exologo_bw.png" alt="logo">
+            <div class="topnav">
+                <a href="#" style="margin-left: 10px; padding: 0;">
+                    <div>
+                        <img src="assets/logo_text.jpg" alt="logo" height="70px;">
+                    </div>
                 </a>
-                <ul id="menu" style="margin: 0;">
-                    <li><a href="https://www.exophase.com/games/">Games</a></li>
-                    <li><a href="https://forums.exophase.com/">Forums</a></li>
-                    <li><a href="https://gamercards.exophase.com/">Gamercards</a></li>
-                    <li><a href="https://www.exophase.com/tag/review/">Reviews</a></li>
-                    <li><a href="https://www.exophase.com/leaderboard/">Leaderboard</a></li>
-                </ul>
-            </nav>
-            <form action="https://www.exophase.com/search" style="display: inline; margin-left: 80%;">
-                <input type="text" value="" placeholder="Start typing"/>
-                <button type="submit">Search</button>
-            </form>
-            <div class = "invitation">
-                <h2 style="font-size: 26px; margin: 0;">
-                Track your PSN, Xbox, Steam, GOG, Origin, Uplay, Blizzard, and Google Play activity
-                </h2>
-                <span style="font-size: 16px;">
-                    Get an Exophase profile and start tracking your gaming activity today! Show off all your achievements and trophies from a central profile. Discover new games, share tips, and interact with other community members.
-                </span>
-                <span style="font-size: 16px; margin-top: 20px">
-                    See how you rank up against other trophy and achievement hunters on our leaderboards, plus stay updated on the latest lists.
-                </span>
-                <p>
-                    
-                    <button type="button">Get started!</button>
-                </p>
+                <a href="#">Games</a>
+                <div class="search-container">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search fa-2x" style="color: white;"></i></button>
+                    </form>
+                </div>
+                <a href="#login">Log in</a>
+                <a href="#signup">Sign up</a>
             </div>
         </header>
         <main>
             <div class="container">
-                <form action="https://www.exophase.com/login/">
-                    <div style="padding: 16px;">
-                        <h1>Add new achievement</h1>
-                        <hr>
-                        <table style="border: none;">
-                            <tbody>
-                                <tr>
-                                    <td><label><b>Game name</b></label></td>
-                                    <td><input type="text" placeholder="Game " required><br></td>
-                                </tr>
-                                <tr>
-                                    <td><label><b>Achievement name</b></label></td>
-                                    <td><input type="text" placeholder="Achievement " required><br></td>
-                                </tr>
-                                <tr>
-                                    <td><label><b>Platform</b></label></td>
-                                    <td>
-                                        <select style="width: 100%;">
-                                            <option>PC</option>
-                                            <option>PS4</option>
-                                            <option>XBOX</option>
-                                        </select>
-                                    <br></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <colgroup>
-                        <button style="width: 28%;">Add</button>
-                        </colgroup>
-                        <hr>
-                    </div>
-                </form>
                 <div>
                     <h2>Updates</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 10%;">Image</th>
-                                <th style="width: 30%">Data</th>
-                                <th style="width: 10%;">Achievement</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="https://www.exophase.com/game/ghost-recon-breakpoint-uplay/challenges/">
-                                        <img src="https://i.exophase.com/uplay/games/l/26d17.png" alt="achievement" />
-                                    </a>
-                                </td>
-                                <td>
-                                    <div class = "achievement-text">
-                                        <time>September 29, 2019 @ 9:18 pm</time>
-                                        <h3>Challenges: Ghost Recon Breakpoint</h3>
-                                        <div class="inline-pf">Uplay</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <img src="https://i.exophase.com/uplay/awards/s/03b8e.png" class = "cimg" alt="achievement" />
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.exophase.com/game/android-helipad-steam/achievements/">
-                                        <img src="https://i.exophase.com/steam/games/l/d08b05.png" alt="achievement" />
-                                    </a>
-                                </td>
-                                <td>
-                                    <div class = "achievement-text">
-                                        <time>September 29, 2019 @ 7:06 pm</time>
-                                        <h3>Achievements: Android Helipad</h3>
-                                        <div class="inline-pf">Steam</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <img src="https://i.exophase.com/steam/awards/s/b3j054j.png" class = "cimg" alt="achievement"/>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.exophase.com/game/ancient-knowledge-steam/achievements/">
-                                        <img src="https://i.exophase.com/steam/games/l/67g37g.png" alt="achievement" />
-                                    </a>
-                                </td>
-                                <td>
-                                    <div class = "achievement-text">
-                                        <time>September 29, 2019 @ 7:06 pm</time>
-                                        <h3>Achievements: Ancient knowledge</h3>
-                                        <div class="inline-pf">Steam</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <img src="https://i.exophase.com/steam/awards/s/d83561e.png" class = "cimg" alt="achievement" />
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.exophase.com/game/americas-retribution-term-2-steam/achievements/">
-                                        <img src="https://i.exophase.com/steam/games/l/854055.png" alt="achievement"/>
-                                    </a>
-                                </td>
-                                <td>
-                                    <div class = "achievement-text">
-                                        <time>September 29, 2019 @ 5:22 pm</time>
-                                        <h3>Achievements: America&#039;s Retribution Term 2</h3>
-                                        <div class="inline-pf">Steam</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <img src="https://i.exophase.com/steam/awards/s/018g53j.png" class = "cimg" alt="achievement"/>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
                 <div>
                     <h2>New Articles</h2>
-                    <ul>
-                        <li>
-                            <section>
-                                <span>Fracter Review: A Contemplative Puzzler to Play with the Lights Off
-                                </span>
-                                <article>
-                                    Reviewed on PlayStation 4
-                                    Video games are fun. Let’s remember that for just a sec. Back in 2004, Xbox owners in Japan were treated to a From Software game that’s nothing like what you would expect from the studio these days. Metal Wolf Chaos was fast, over-the-top, and hilarious. It’s since been enjoyed by larger audiences thanks to importing and YouTube playthroughs. And now, we have Metal Wolf Chaos XD, a re-release of the game for consoles and PC published by Devolver Digital. It’s fun. It’s so damn fun.<br><br>
-                                    <aside>
-                                        You Are the President of These United States, and You Take No Guff
-                                    </aside>
-                                    <br>
-                                    Metal Wolf Chaos XD gives an accurate depiction of United States patriotism. That was a joke. The game is totally bonkers, and its portrayal of American pride is hilarious. The whole thing has a distinct Japanese vibe to it, and it’s impossible not to enjoy the parody of Americana the game so gleefully puts on display.
-                                </article>
-                            </section>
-                            <hr>
-                        </li>
-                        <li>
-                            <section>
-                                <span>The Messenger: Picnic Panic Review: A Fast and Fun Side Quest</span>
-                                <article>
-                                    The Messenger is easily one of the best action games of the year. If you previously played through it and are looking for a reason to return to Sabotage Studio’s ninja-themed Metroidvania, you’re in store for a treat — a bite-sized treat, but a worthwhile one nonetheless. The Messenger: Picnic Panic is a free dose of DLC that adds about two hours of play time to the main campaign, and it makes for a highly entertaining two hours.<br><br>
-                                    <aside>
-                                        Does This Make Sense? Who Cares!
-                                    </aside>
-                                    <br>
-                                    The Messenger: Picnic Panic takes place in an alternate timeline from the original. In this continuity, the Phobekins — those adorable, rotund critters you met in the main story — decide to have a picnic at the beach. Things go awry when they’re kidnapped and their fear is being used to power an evil energy. Like the story in the base campaign, the plot of Picnic Panic is sort of just there to give you a reason to dive head first into adventure. It works for what it is.
-                                </article>
-                            </section>
-                        </li>
-                    </ul>
+                    <div class="articles-section">
+                        <section class = "article-blob">
+                            <span><h3>Fracter Review: A Contemplative Puzzler to Play with the Lights Off
+                            </h3></span>
+                            <article>
+                                Reviewed on PlayStation 4
+                                Video games are fun. Let’s remember that for just a sec. Back in 2004, Xbox owners in Japan were treated to a From Software game that’s nothing like what you would expect from the studio these days. Metal Wolf Chaos was fast, over-the-top, and hilarious. It’s since been enjoyed by larger audiences thanks to importing and YouTube playthroughs. And now, we have Metal Wolf Chaos XD, a re-release of the game for consoles and PC published by Devolver Digital. It’s fun. It’s so damn fun.<br><br>
+                                <aside style="font-style: italic; font-size: 12px;">
+                                    You Are the President of These United States, and You Take No Guff
+                                </aside>
+                                <br>
+                                Metal Wolf Chaos XD gives an accurate depiction of United States patriotism. That was a joke. The game is totally bonkers, and its portrayal of American pride is hilarious. The whole thing has a distinct Japanese vibe to it, and it’s impossible not to enjoy the parody of Americana the game so gleefully puts on display.
+                            </article>
+                        </section>
+                        <section class = "article-blob">
+                            <span><h3>The Messenger: Picnic Panic Review: A Fast and Fun Side Quest</h3></span>
+                            <article>
+                                The Messenger is easily one of the best action games of the year. If you previously played through it and are looking for a reason to return to Sabotage Studio’s ninja-themed Metroidvania, you’re in store for a treat — a bite-sized treat, but a worthwhile one nonetheless. The Messenger: Picnic Panic is a free dose of DLC that adds about two hours of play time to the main campaign, and it makes for a highly entertaining two hours.<br><br>
+                                <aside style="font-style: italic; font-size: 12px;">
+                                    Does This Make Sense? Who Cares!
+                                </aside>
+                                <br>
+                                The Messenger: Picnic Panic takes place in an alternate timeline from the original. In this continuity, the Phobekins — those adorable, rotund critters you met in the main story — decide to have a picnic at the beach. Things go awry when they’re kidnapped and their fear is being used to power an evil energy. Like the story in the base campaign, the plot of Picnic Panic is sort of just there to give you a reason to dive head first into adventure. It works for what it is.
+                            </article>
+                        </section>
+                        <section class = "article-blob">
+                            <span><h3>Neo Cab Review: An Earnest, Heartfelt Narrative</h3></span>
+                            <article>
+                                People go through life and interact with hundreds, no, thousands of people. There’s your family, your group of friends, the people you grow up with, your pals, and then there are the folks you just sort of meet along the way. These are people you cross paths with and have a few words with. Maybe you didn’t know it or think about it much at the time, but those brief, minute interactions are significant. I think about that sometimes, but Neo Cab really put the importance of such bite-sized interactions into perspective.
+                                Developed by Chance Agency, Neo Cab is a narrative adventure game that follows Lina, a driver for an Uber-like service who meets a cast of unique characters along the way. These characters form the foundations for what is a truly sincere and authentic emotional journey, and just like those folks in real life who you meet that are just passing by, Lina and the rest of the cast in Neo Cab are likely to leave a lasting impression.
+                            </article>
+                        </section>
+                        <section class = "article-blob">
+                            <span><h3>Heave Ho Review: Get These Hands</h3></span>
+                            <article>
+                                I’m fighting the urge to make this a one-sentence review and ask you, politely, to go and round up a group of four friends (yourself included) and just play Heave Ho. That said, it would be a shame if I didn’t sing the praises of Le Cartel Studio and its incredible couch co-op game. I honestly can’t remember the last time I had this much fun with a multiplayer title. Heave Ho is awesome. Awesome!
+                                Grabby Platforming
+                                The premise of Heave Ho is super simple: Make it from one end of the screen to the other. Going from point A to point B only seems simple on paper, though, because the ensuing antics that Heave Ho prides itself on make for a raucous ride that’ll leave you cracking up and hungry for more.
+                                Characters in Heave Ho are round with long arms and no legs. You move your character’s arms with the analog stick and use the triggers to perform a grabbing action with the right and left hands.
+                            </article>
+                        </section>
+                    </div>
                 </div>
             </div>
         </main>
         <footer class = "footer-background">
             <div>
-                <div style="text-align: left; font-size: 10px;">
-                    <img src="https://www.exophase.com/assets/zeal/logos/exologo_bw.png" alt="logo" />
-                </div>
-                <span> Named in honor of the PSP programmer Exophase.</span>
-                <div>
-                    <span>Quick Links:</span>
-                    <a href="https://www.exophase.com/rules/">Rules</a>
-                    <a href="https://www.exophase.com/about/">About</a>
-                    <a href="https://www.exophase.com/contact/">Contact</a>
-                    <a href="https://www.exophase.com/legal/">Legal</a>
-                    <a rel="nofollow" href="https://www.exophase.com/private-policy/">Private Policy</a>
-                    <a rel="nofollow" href="https://www.exophase.com/terms/">Terms</a>
-                </div>
+                <img src="assets/logo_transparent.png" alt="logo" height="150px;">
             </div>
-            <form action="https://www.exophase.com/login/">
-                <div style="padding: 16px;">
-                    <h3>Register</h3>
-                    <p>Please fill in this form to create an account.</p>
-                    <hr>
-                    <label><b>Email <input type="text" placeholder="Enter Email" required></b></label>
-                    <label><b>Password <input type="password" placeholder="Enter Password" required></b></label>
-                    <hr>
-                    <p>By creating an account you agree to our<a href="https://www.exophase.com/terms/">Terms & Privacy</a></p>
-                    <button>Register</button>
-                </div>
-                <div>
-                    <p>Already have an account? <a href="#">Sign in</a></p>
-                </div>
-            </form>
+            <div>
+                <span>Quick Links:</span>
+                <a href="https://www.exophase.com/rules/">Rules</a>
+                <a href="https://www.exophase.com/about/">About</a>
+                <a href="https://www.exophase.com/contact/">Contact</a>
+                <a href="https://www.exophase.com/legal/">Legal</a>
+                <a rel="nofollow" href="https://www.exophase.com/private-policy/">Private Policy</a>
+                <a rel="nofollow" href="https://www.exophase.com/terms/">Terms</a>
+            </div>
         </footer>
     </body>
 </html>
