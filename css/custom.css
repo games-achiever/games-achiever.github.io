@@ -5,8 +5,6 @@ body {
     background-color: rgb(36,42,49);
 }
 
-
-
 a {
     color:       #cfcfcf;
     white-space: nowrap;
@@ -35,15 +33,90 @@ a:hover {
     border-color:   teal;
 }
 
-
-.container {
+/* ---------------------- Header navigation -------------------*/
+.topnav {
+    font-size:        25px;
     background-color: rgb(36,42,49);
-    text-align:       left;
-    position:         relative;
-    padding:          15px;
-    margin-right:     150px;
-    margin-left:      150px;
+    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://i.exophase.com/xbox/featured/l/0515j.jpg");*/
+    padding-top:      5px;
+    overflow:         hidden;
+    display:          flex;
+    align-items:      center;
 }
+
+
+.topnav .search-container {
+    white-space: nowrap;
+    width:       55%;
+}
+
+.topnav input[type=text] {
+    padding:        8px;
+    color:          #cfcfcf;
+    border-radius:  25px;
+    background-color:rgba(207, 207, 207, 0.1);
+    font-size:      20px;
+    border-color:   rgba(255, 255, 255, 0.3);
+    width:          85%;
+    }
+
+.topnav .search-container button {
+    padding:            8px 10px;
+    background-color:   rgba(207, 207, 207, 0.1);
+    border-radius:      25px;
+    border-color:       rgba(255, 255, 255, 0.3);
+    cursor:             pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #cfcfcf;
+}
+
+/*----------------------------- Grid layout -----------------------------*/
+.container {
+    display: grid;
+    grid-template-areas: 
+    "sidebar main main"
+    "footer footer footer";
+}
+
+.container-main {
+    grid-area: main;
+    margin-right: 30px;
+}
+
+/*----------------------------- Sidebar -----------------------------*/
+.container-sidebar {
+    margin-right: 20px;
+    grid-area: sidebar;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.container-sidebar a {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+
+.container-sidebar-wrapper{
+  margin-top: 20px;
+}
+
+.container-sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/*----------------------------- Footer layout -----------------------------*/
+.container-footer {
+    grid-area: footer;
+    margin-top: 20px;
+}
+
 
 .footer-background{
     font-size:      25px;
@@ -51,7 +124,7 @@ a:hover {
     flex-wrap:      nowrap;
     align-items:    center;
     padding:        10px;
-    background-image: url("../assets/footer_image.jpg");
+    background-image: url("../assets/logo/footer_image.jpg");
     background-size: 100%;
 }
 
@@ -75,46 +148,6 @@ button:focus {
     width:          1px;       
 }
 
-
-
-/* ---------------------- Header navigation -------------------*/
-.topnav {
-    font-size:        25px;
-    background-color: rgb(36,42,49);
-    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://i.exophase.com/xbox/featured/l/0515j.jpg");*/
-    padding-top:      5px;
-    overflow:         hidden;
-    display:          flex;
-    align-items:      center;
-}
-
-
-.topnav .search-container {
-    white-space: nowrap;
-    width:       55%;
-}
-
-.topnav input[type=text] {
-    padding:        10px;
-    color:          #cfcfcf;
-    border-radius:  25px;
-    background-color:rgba(207, 207, 207, 0.1);
-    font-size:      20px;
-    border-color:   rgba(255, 255, 255, 0.3);
-    width:          85%;
-    }
-
-.topnav .search-container button {
-    padding:            6px 8px;
-    background-color:   rgba(207, 207, 207, 0.1);
-    border-radius:      25px;
-    border-color:       rgba(255, 255, 255, 0.3);
-    cursor:             pointer;
-}
-
-.topnav .search-container button:hover {
-    background: #cfcfcf;
-}
 
 
 @media screen and (max-width: 676px) {
