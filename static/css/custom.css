@@ -16,7 +16,6 @@ a:hover {
   color: white;
 }
 
-
 .articles-section{
     display:               grid;
     grid-template-columns: 2fr 2fr;
