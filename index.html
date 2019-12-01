@@ -6,6 +6,7 @@
         <title>Wolfor games</title>
         <link rel="shortcut icon" href="assets/logo/logo_round.png" />
         <link rel = "stylesheet" href = "css/custom.css">
+        <link rel = "stylesheet" href = "css/signForm.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for icons-->
     </head>
     <body>
@@ -23,8 +24,38 @@
                         <button type="submit"><i class="fa fa-search fa-2x" style="color: white;"></i></button>
                     </form>
                 </div>
-                <a href="#login">Log in</a>
-                <a href="#signup">Sign up</a>
+                <div>
+                    <button class="sign-open-button" onclick="changeForm('LogForm')">Log in</button>
+                    <div class="sign-form-popup" id="LogForm">
+                        <form action="/action_page.php" class="sign-form-container">
+                            <h4>Login</h4>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="changeForm('LogForm')">Close</button>
+                        </form>
+                    </div>
+                    <script src="js/signForm.js"></script>
+                </div>
+                <div>
+                    <button class="sign-open-button" onclick="changeForm('SignForm')">Sign up</button>
+                    <div class="sign-form-popup" id="SignForm">
+                        <form action="/action_page.php" class="sign-form-container">
+                            <h4>Sign up</h4>
+                            <label for="fullname"><b>Full name</b></label>
+                            <input type="text" placeholder="Enter name" name="fullname" required>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="changeForm('SignForm')">Close</button>
+                        </form>
+                    </div>
+                    <script src="js/signForm.js"></script>
+                </div>
             </div>
             <hr>
         </header>
