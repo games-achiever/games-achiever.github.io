@@ -6,14 +6,14 @@ body {
 }
 
 a {
-    color:       #cfcfcf;
+    color: #b3b3b3;
     white-space: nowrap;
     padding:     20px 16px;
     text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .articles-section{
@@ -37,7 +37,6 @@ a:hover {
     font-size:        25px;
     background-color: rgb(36,42,49);
     /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://i.exophase.com/xbox/featured/l/0515j.jpg");*/
-    padding-top:      5px;
     overflow:         hidden;
     display:          flex;
     align-items:      center;
@@ -46,7 +45,7 @@ a:hover {
 
 .topnav .search-container {
     white-space: nowrap;
-    width:       55%;
+    width:       50%;
 }
 
 .topnav input[type=text] {
@@ -60,7 +59,8 @@ a:hover {
 }
 
 .topnav .search-container button {
-    padding:            8px 10px;
+    border-width:       2px;
+    padding:            8px 15px;
     background-color:   rgba(207, 207, 207, 0.1);
     border-radius:      25px;
     border-color:       rgba(255, 255, 255, 0.3);
@@ -68,7 +68,16 @@ a:hover {
 }
 
 .topnav .search-container button:hover {
-    background: #cfcfcf;
+    background: #ffffff;
+}
+
+.sign-open-button {
+  font-size: 25px;
+  background-color: rgb(36,42,49);
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /*----------------------------- Grid layout -----------------------------*/
@@ -80,6 +89,7 @@ a:hover {
 }
 
 .container-main {
+    margin-left: 30px;
     grid-area: main;
     margin-right: 30px;
 }
@@ -103,7 +113,8 @@ a:hover {
 
 
 .container-sidebar-wrapper{
-  margin-top: 20px;
+    margin-top: 20px;
+    position: fixed;
 }
 
 .container-sidebar a:hover {
@@ -114,6 +125,9 @@ a:hover {
 .container-footer {
     grid-area: footer;
     margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
 }
 
 
@@ -123,7 +137,8 @@ a:hover {
     flex-wrap:      nowrap;
     align-items:    center;
     padding:        10px;
-    background-image: url("../assets/logo/footer_image.jpg");
+    /*background-image: url("../assets/logo/footer_image.jpg");*/
+    background-color: rgb(36,42,49);
     background-size: 100%;
 }
 
@@ -172,7 +187,7 @@ button:focus {
   }
 
   .container{
-    margin: 0px;
+    margin: 0;
   }
 
   .articles-section{
@@ -182,7 +197,6 @@ button:focus {
   .footer-background{
     font-size: 15px;
     flex-wrap: wrap;
-    background-size: 
   }
 
   .footer-background a{

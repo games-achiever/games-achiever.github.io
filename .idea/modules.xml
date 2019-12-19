@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../python/iasa_python/classjournal/.idea/classjournal.iml" filepath="$PROJECT_DIR$/../../python/iasa_python/classjournal/.idea/classjournal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../python/classwork_flask/.idea/classwork_flask.iml" filepath="$PROJECT_DIR$/../../python/classwork_flask/.idea/classwork_flask.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/wolforgames.github.io.iml" filepath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" />
     </modules>
   </component>

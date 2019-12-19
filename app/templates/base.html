@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfor Games</title>
+
+<!--    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{{ url_for('static',filename='assets/logo/logo_round.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/custom.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <a href="/" style="margin-left: 10px; padding: 0;">
+            <div>
+                <img src="{{ url_for('static',filename='assets/logo/logo_text.jpg') }}" alt="logo" height="70px;">
+            </div>
+        </a>
+        <a href="#mygames">My games</a>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search fa-2x" style="color: white;"></i></button>
+            </form>
+        </div>
+        <span>Hello, {{ current_user.username }}</span>
+        {% if current_user.is_authenticated %}
+        <div>
+            <button class="sign-open-button"><a href="/logout">Log out</a></button>
+        </div>
+        {% endif %}
+    </div>
+    <hr>
+</header>
+{% block content %}{% endblock %}
+<div class="container-footer">
+    <footer class="footer-background">
+        <div>
+            <img src="{{ url_for('static',filename='assets/logo/logo_transparent.png') }}" alt="logo"
+                 class="footer-logo">
+        </div>
+        <span>Quick Links:</span>
+        <hr class="vertical-line">
+        <a href="https://www.exophase.com/rules/">Rules</a>
+        <a href="https://www.exophase.com/about/">About</a>
+        <a href="https://www.exophase.com/contact/">Contact</a>
+        <a rel="nofollow" href="https://www.exophase.com/terms/">Terms</a>
+    </footer>
+</div>
+</body>
+</html>
