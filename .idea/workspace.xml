@@ -2,44 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="261ff792-f599-433b-ab50-63269538763d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/icons/new_releases_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/icons/new_releases_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/icons/search_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/icons/search_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/footer_image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/footer_image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/footer_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/footer_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/logo_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/logo_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/logo_text.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/logo_text.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/logo_transparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/logo_transparent.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo/wolfor.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/assets/logo/wolfor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/signForm.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/signForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/signForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +30,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - wolfordb@zanner.org.ua" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - wolfordb@zanner.org.ua" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - wolfordb@zanner.org.ua" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wolfordb: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -93,7 +82,10 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="PyFindUsagesOptions">
+    <option name="isSearchForTextOccurrences" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -236,8 +228,16 @@
       <workItem from="1575456631795" duration="2460000" />
       <workItem from="1575463504882" duration="362000" />
       <workItem from="1575974659102" duration="1819000" />
-      <workItem from="1576572230080" duration="31243000" />
+      <workItem from="1576572230080" duration="45753000" />
     </task>
+    <task id="LOCAL-00001" summary="added flask files. Added login/sign up">
+      <created>1576788550741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576788550741</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +270,15 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added flask files. Added login/sign up" />
+    <option name="LAST_COMMIT_MESSAGE" value="added flask files. Added login/sign up" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#SQL_Dialects" timestamp="1576795797841">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#SQL_Dialects/0.23.1440.877@0.23.1440.877" timestamp="1576795797841" />
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576632159276">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -287,22 +295,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="429" y="65" key="#scratch/0.23.1440.877@0.23.1440.877" timestamp="1576716303633" />
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1576787928729">
+    <state x="252" y="62" key="CommitChangelistDialog2" timestamp="1576788550505">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576787928729" />
-    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1576787928728">
+    <state x="252" y="62" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1576788550505" />
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1576800947999">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576787928728" />
-    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1576787928727">
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576800947999" />
+    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1576800947998">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576787928727" />
-    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1576787928728">
+    <state width="1398" height="249" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576800947998" />
+    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1576800947998">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576787928728" />
+    <state width="1398" height="249" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576800947998" />
+    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1576800947999">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="249" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576800947999" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1576716628118">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -323,14 +335,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1440.877@0.23.1440.877" timestamp="1576632205376" />
-    <state x="229" y="100" key="SettingsEditor" timestamp="1575975187059">
+    <state x="229" y="100" key="SettingsEditor" timestamp="1576837830255">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1575975187059" />
-    <state x="509" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576788509731">
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1576837830255" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1576788553655">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="509" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1576788509731" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1576788553655" />
+    <state x="458" y="273" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1576788626887">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="273" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.23.1440.877@0.23.1440.877" timestamp="1576788626887" />
+    <state x="509" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576842025974">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="509" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1576842025974" />
     <state x="100" y="123" width="1240" height="677" key="dock-window-1" timestamp="1576627832820">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -339,6 +359,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="dock-window-2/0.23.1440.877@0.23.1440.877" timestamp="1576627832821" />
+    <state x="312" y="191" width="816" height="540" key="find.popup" timestamp="1576795744833">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="312" y="191" width="816" height="540" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1576795744833" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -347,17 +371,12 @@
           <url>file://$PROJECT_DIR$/../../python/flask_microblog/app/api/errors.py</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wolforgames_github_io$Run.coverage" NAME="Run Coverage Results" MODIFIED="1576661463805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wolforgames_github_io$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1576716632769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/wolforgames_github_io$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1576800598396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/wolforgames_github_io$final_work.coverage" NAME="final_work Coverage Results" MODIFIED="1576672147940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

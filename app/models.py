@@ -17,7 +17,7 @@ def check_password(hashed_password, user_password):
     return password == sha256(user_password.encode()).hexdigest()
 
 
-class Users(UserMixin, db.Model):
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
@@ -33,25 +33,31 @@ class Users(UserMixin, db.Model):
         return check_password(self.password, password)
 
 
-
 @login.user_loader
 def load_user(id):
-    return Users.query.get(int(id))
+    return User.query.get(int(id))
 
 
-class User_game(db.Model):
+class User_games(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(255), index=True, unique=True)
-    description = db.Column(db.String(10000))
-    released = db.Column(db.String(255), index=True)
-    icon = db.Column(db.String(255))
-    website = db.Column(db.String(255))
-    rating = db.Column(db.DECIMAL(10,2))
-    # platform = db.Column(db.String(255), index=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), index=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True, index=True)
+    user_rating = db.Column(db.DECIMAL(10,2))
     added_at = db.Column(db.TIMESTAMP(), default=datetime.utcnow)
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+
+class Games(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), index=True)
+    description = db.Column(db.String(10000))
+    released = db.Column(db.String(255))
+    background_image = db.Column(db.String(255))
+    url = db.Column(db.String(255))
+    rating = db.Column(db.DECIMAL(10,2))
+    achiev_count = db.Column(db.Integer)
+
+    def __repr__(self):
+        return '<Games {}>'.format(self.body)
 
 
