@@ -3,7 +3,7 @@ from datetime import datetime
 from app import login
 from flask_login import UserMixin
 
-from hashlib import sha256
+from hashlib import sha256, md5
 from uuid import uuid4
 
 def hash_password(password):
@@ -22,6 +22,8 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
     password = db.Column(db.String(128))
+    description = db.Column(db.String(255))
+    last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
@@ -32,6 +34,11 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password(self.password, password)
 
+    def avatar(self, size):
+        digest = md5(self.email.lower().encode('utf-8')).hexdigest()
+        return 'https://www.gravatar.com/avatar/{}?d=mp&s={}'.format(
+            digest, size)
+
 
 @login.user_loader
 def load_user(id):
@@ -39,13 +46,13 @@ def load_user(id):
 
 
 class User_games(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    game_id = db.Column(db.Integer, db.ForeignKey('games.id'), primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True, index=True)
     user_rating = db.Column(db.DECIMAL(10,2))
     added_at = db.Column(db.TIMESTAMP(), default=datetime.utcnow)
 
     def __repr__(self):
-        return '<Post {}>'.format(self.body)
+        return '<Game {}>'.format(self.game_id)
 
 class Games(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -58,6 +65,6 @@ class Games(db.Model):
     achiev_count = db.Column(db.Integer)
 
     def __repr__(self):
-        return '<Games {}>'.format(self.body)
+        return '<Games {}>'.format(self.id)
 
 

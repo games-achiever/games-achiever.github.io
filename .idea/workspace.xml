@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="261ff792-f599-433b-ab50-63269538763d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/edit_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/assets/logo/logo_round.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
@@ -46,6 +51,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wolfordb: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - wolfordb@zanner.org.ua" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wolfordb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user_games: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -79,10 +91,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.flask.configuration.FlaskConfigurable" />
   </component>
   <component name="PyFindUsagesOptions">
     <option name="isSearchForTextOccurrences" value="true" />
@@ -94,7 +111,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scratch">
+  <component name="RunManager" selected="Flask server.Run Flask">
     <configuration name="Run" type="PythonConfigurationType" factoryName="Python">
       <module name="wolforgames.github.io" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,7 +199,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Run Flask" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
+      <module name="wolforgames.github.io" />
+      <option name="target" value="main.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Flask server.Run Flask" />
       <item itemvalue="Python.Run" />
       <item itemvalue="Python.final_work" />
       <item itemvalue="Python.scratch" />
@@ -199,12 +232,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - wolfordb@zanner.org.ua" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -228,7 +256,8 @@
       <workItem from="1575456631795" duration="2460000" />
       <workItem from="1575463504882" duration="362000" />
       <workItem from="1575974659102" duration="1819000" />
-      <workItem from="1576572230080" duration="45753000" />
+      <workItem from="1576572230080" duration="59576000" />
+      <workItem from="1576877326778" duration="5921000" />
     </task>
     <task id="LOCAL-00001" summary="added flask files. Added login/sign up">
       <created>1576788550741</created>
@@ -237,7 +266,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576788550741</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added games cards, added pagination. Changed header navbar">
+      <created>1576842056752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576842056752</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added games cards, added pagination. Changed header navbar">
+      <created>1576842067596</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576842067596</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,17 +315,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added flask files. Added login/sign up" />
-    <option name="LAST_COMMIT_MESSAGE" value="added flask files. Added login/sign up" />
+    <MESSAGE value="Added games cards, added pagination. Changed header navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added games cards, added pagination. Changed header navbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="127" key="#SQL_Dialects" timestamp="1576795797841">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="127" key="#SQL_Dialects/0.23.1440.877@0.23.1440.877" timestamp="1576795797841" />
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576632159276">
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576856654903">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1576632159276" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1576856654903" />
     <state x="433" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576573349729">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -295,54 +339,54 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="429" y="65" key="#scratch/0.23.1440.877@0.23.1440.877" timestamp="1576716303633" />
-    <state x="252" y="62" key="CommitChangelistDialog2" timestamp="1576842062231">
+    <state x="252" y="62" key="CommitChangelistDialog2" timestamp="1576842067465">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="252" y="62" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1576842062231" />
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1576800947999">
+    <state x="252" y="62" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1576842067465" />
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1576886242754">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576800947999" />
-    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1576800947998">
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576886242754" />
+    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1576886242752">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576800947998" />
-    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1576800947998">
+    <state width="1398" height="249" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576886242752" />
+    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1576886242751">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576800947998" />
-    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1576800947999">
+    <state width="1398" height="249" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576886242751" />
+    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1576886242752">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576800947999" />
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1576716628118">
+    <state width="1398" height="249" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576886242752" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1576880728721">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576716628118" />
-    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1576716628117">
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576880728721" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1576880728720">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1576716628117" />
-    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1576716628117">
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1576880728720" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1576880728720">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1576716628117" />
-    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1576716628118">
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1576880728720" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1576880728720">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1576716628118" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1576880728720" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1576632205376">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1440.877@0.23.1440.877" timestamp="1576632205376" />
-    <state x="229" y="100" key="SettingsEditor" timestamp="1576837830255">
+    <state x="229" y="100" key="SettingsEditor" timestamp="1576877411013">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1576837830255" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1576788553655">
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1576877411013" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1576842069392">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1576788553655" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1576842069392" />
     <state x="458" y="273" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1576788626887">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -359,10 +403,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="dock-window-2/0.23.1440.877@0.23.1440.877" timestamp="1576627832821" />
-    <state x="312" y="191" width="816" height="540" key="find.popup" timestamp="1576795744833">
+    <state x="312" y="191" width="816" height="540" key="find.popup" timestamp="1576880486468">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="312" y="191" width="816" height="540" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1576795744833" />
+    <state x="312" y="191" width="816" height="540" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1576880486468" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -375,8 +419,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/wolforgames_github_io$Run.coverage" NAME="Run Coverage Results" MODIFIED="1576661463805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wolforgames_github_io$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1576800598396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/wolforgames_github_io$Run.coverage" NAME="Run Coverage Results" MODIFIED="1576854962230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wolforgames_github_io$Run_Flask.coverage" NAME="Run Flask Coverage Results" MODIFIED="1576884489325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wolforgames_github_io$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1576854949257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/wolforgames_github_io$final_work.coverage" NAME="final_work Coverage Results" MODIFIED="1576672147940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

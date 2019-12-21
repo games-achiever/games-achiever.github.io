@@ -10,4 +10,4 @@ class Config(object):
         "mysql+pymysql://ka7617:123456@zanner.org.ua:33321/wolfordb"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    POSTS_PER_PAGE = 21
+    POSTS_PER_PAGE = 9
