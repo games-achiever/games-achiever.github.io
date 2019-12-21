@@ -43,10 +43,10 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-            <a class="nav-link" href="#">My games <span class="sr-only">(current)</span></a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            <form class="form-inline" action="{{ url_for('search', by='name') }}" method="post" novalidate>
+                {{ g.search_form.hidden_tag() }}
+                {{ g.search_form.search(class_="form-control mr-sm-2", size=32, placeholder="Search" ) }}
+                {{ g.search_form.submit(class_="btn btn-outline-info my-2 my-sm-0") }}
             </form>
             <ul class="navbar-nav ml-auto nav-flex-icons">
                 <li class="nav-item">

@@ -30,11 +30,6 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-            <a class="nav-link" href="#">My games <span class="sr-only">(current)</span></a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
             <ul class="navbar-nav ml-auto nav-flex-icons">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
@@ -69,14 +64,6 @@
                         {{ user.email}}
                     </div>
                 </div>
-                <!-- END SIDEBAR USER TITLE -->
-                <!-- SIDEBAR BUTTONS -->
-                <div class="profile-userbuttons">
-                    <button type="button" class="btn btn-success btn-sm">Follow</button>
-                    <button type="button" class="btn btn-danger btn-sm">Message</button>
-                </div>
-                <!-- END SIDEBAR BUTTONS -->
-                <!-- SIDEBAR MENU -->
                 <div class="profile-usermenu sidebar-sticky">
                     <ul class="nav flex-column">
                         {% if user.description %}
@@ -104,17 +91,35 @@
                     <div class="col-sm-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">{{game.name}}</h5>
-                                <img class="card-img-top" src="{{ game.background_image}}" alt="Game background image"
-                                     style="width:100%;">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><strong>Website:  </strong><a href="{{game.url}}">{{game.url}}</a></li>
-                                    <li class="list-group-item"><strong>Released:  </strong> {{game.released}}</li>
-                                    <li class="list-group-item"><strong>Rating:  </strong> {{game.rating}}</li>
-                                    <li class="list-group-item"><strong>Achievements count:  </strong> {{game.achiev_count}}</li>
-                                    <li class="list-group-item"><a href="{{ url_for('removegame', id=game.id, from='user', user='{{currentuser.username}}' ) }}" class="btn btn-dark" style="float: right"><i class="fas fa-star"></i>Remove</a></li>
+                                <h5 class="card-title">{{game.name}}
+                                    <button class="btn btn-primary" style="float: right; margin: 10px" type="button"
+                                            data-toggle="collapse"
+                                            data-target="#game{{game.id}}"
+                                            aria-expanded="false" aria-controls="game{{game.id}}">
+                                        Collapse
+                                    </button>
+                                </h5>
+                                <div class="collapse show" id="game{{game.id}}">
+                                    <img class="card-img-top" src="{{ game.background_image}}"
+                                         alt="Game background image"
+                                         style="width:100%;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Website: </strong><a href="{{game.url}}">{{game.url}}</a>
+                                        </li>
+                                        <li class="list-group-item"><strong>Released: </strong> {{game.released}}</li>
+                                        <li class="list-group-item"><strong>Rating: </strong> {{game.rating}}</li>
+                                        <li class="list-group-item"><strong>Achievements count: </strong>
+                                            {{game.achiev_count}}
+                                        </li>
+                                        {% if current_user.id == user.id %}
+                                        <li class="list-group-item"><a
+                                                href="{{ url_for('removegame', id=game.id, from='user', user='{{currentuser.username}}' ) }}"
+                                                class="btn btn-dark" style="float: right"><i class="fas fa-star"></i>Remove</a>
+                                        </li>
+                                        {% endif %}
                                     </ul>
-                                <p class="card-text">{{game.description |safe}}</p>
+                                    <p class="card-text">{{game.description |safe}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>

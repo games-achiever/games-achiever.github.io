@@ -3,7 +3,7 @@
 {% block content %}
 <div class="main-container">
     <div class="container-main">
-        <h2>Games</h2>
+        <h2>Search</h2>
         <div class="card-section">
             {% for game in games %}
             <div class="card-main">
@@ -42,13 +42,13 @@
                                             </li>
                                             {% if game.id in ugames %}
                                             <li class="list-group-item"><a
-                                                    href="{{ url_for('removegame', id=game.id, from='home', page=current_page  ) }}"
+                                                    href="{{ url_for('removegame', id=game.id, from='search', page=current_page  ) }}"
                                                     class="btn btn-dark" style="float: right"><i
                                                     class="fas fa-star"></i>Remove</a>
                                             </li>
                                             {% else %}
                                             <li class="list-group-item"><a
-                                                    href="{{ url_for('addgame', id=game.id, from='home', page=current_page ) }}"
+                                                    href="{{ url_for('addgame', id=game.id, from='search', page=current_page ) }}"
                                                     class="btn btn-dark" style="float: right"><i
                                                     class="far fa-star"></i>Add</a>
                                             </li>
@@ -65,10 +65,10 @@
                         </div>
 
                         {% if game.id in ugames %}
-                        <a href="{{ url_for('removegame', id=game.id, from='home', page=current_page  ) }}"
+                        <a href="{{ url_for('removegame', id=game.id, from='search', page=current_page  ) }}"
                            class="btn btn-dark" style="float: right"><i class="fas fa-star"></i>Remove</a>
                         {% else %}
-                        <a href="{{ url_for('addgame', id=game.id, from='home', page=current_page ) }}"
+                        <a href="{{ url_for('addgame', id=game.id, from='search', page=current_page ) }}"
                            class="btn btn-dark" style="float: right"><i class="far fa-star"></i>Add</a>
                         {% endif %}
 
@@ -77,31 +77,8 @@
             </div>
             {% endfor %}
         </div>
-        <nav>
-            <ul class="pagination justify-content-end">
-                {% if url_prev %}
-                <li class="page-item">
-                    <a class="page-link" href="{{url_prev}}" tabindex="-1">Previous</a>
-                </li>
-                {% else %}
-                <li class="page-item disabled">
-                    <a class="page-link" href="{{url_prev}}" tabindex="-1">Previous</a>
-                </li>
-                {% endif %}
-
-                {% if url_next %}
-                <li class="page-item">
-                    <a class="page-link" href="{{url_next}}" tabindex="-1">Next</a>
-                </li>
-                {% else %}
-                <li class="page-item disabled">
-                    <a class="page-link" href="{{url_next}}" tabindex="-1">Next</a>
-                </li>
-                {% endif %}
-            </ul>
-        </nav>
     </div>
-    <div class="container-sidebar">
+        <div class="container-sidebar">
         <div class="container-sidebar-wrapper">
             <a href="user/{{current_user.username}}"><i class="fas fa-user"></i> Profile</a>
             <a href="{{ url_for('search', by='new') }}"><i class="fa fa-plus-square"></i> New releases</a>
@@ -110,6 +87,29 @@
         </div>
     </div>
 </div>
+<nav>
+    <ul class="pagination justify-content-end" style="margin-right: 5%">
+        {% if url_prev %}
+        <li class="page-item">
+            <a class="page-link" href="{{url_prev}}" tabindex="-1">Previous</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" href="{{url_prev}}" tabindex="-1">Previous</a>
+        </li>
+        {% endif %}
+
+        {% if url_next %}
+        <li class="page-item">
+            <a class="page-link" href="{{url_next}}" tabindex="-1">Next</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" href="{{url_next}}" tabindex="-1">Next</a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
 {% endblock %}
 
 

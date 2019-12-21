@@ -1,8 +1,8 @@
 flask-wtf
 flask_migrate
 alembic
-flask-migrate
 sqlalchemy
 pymysql
 datetime
 flask-login
+elasticsearch

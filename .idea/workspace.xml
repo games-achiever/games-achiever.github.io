@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="261ff792-f599-433b-ab50-63269538763d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/static/css/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/edit_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wolforgames.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/assets/logo/logo_round.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +255,7 @@
       <workItem from="1575463504882" duration="362000" />
       <workItem from="1575974659102" duration="1819000" />
       <workItem from="1576572230080" duration="59576000" />
-      <workItem from="1576877326778" duration="5921000" />
+      <workItem from="1576877326778" duration="15580000" />
     </task>
     <task id="LOCAL-00001" summary="added flask files. Added login/sign up">
       <created>1576788550741</created>
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576842067596</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added profile, edit profile pages, adding and removing games to favourites">
+      <created>1576887155065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576887155065</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,17 +321,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added flask files. Added login/sign up" />
     <MESSAGE value="Added games cards, added pagination. Changed header navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added games cards, added pagination. Changed header navbar" />
+    <MESSAGE value="Added profile, edit profile pages, adding and removing games to favourites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added profile, edit profile pages, adding and removing games to favourites" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="127" key="#SQL_Dialects" timestamp="1576795797841">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="127" key="#SQL_Dialects/0.23.1440.877@0.23.1440.877" timestamp="1576795797841" />
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576856654903">
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576896416807">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1576856654903" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1576896416807" />
     <state x="433" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576573349729">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -339,42 +345,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="429" y="65" key="#scratch/0.23.1440.877@0.23.1440.877" timestamp="1576716303633" />
-    <state x="252" y="62" key="CommitChangelistDialog2" timestamp="1576842067465">
+    <state x="252" y="62" width="1032" height="798" key="CommitChangelistDialog2" timestamp="1576887154762">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="252" y="62" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1576842067465" />
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1576886242754">
+    <state x="252" y="62" width="1032" height="798" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1576887154762" />
+    <state width="1398" height="193" key="GridCell.Tab.0.bottom" timestamp="1576900585312">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576886242754" />
-    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1576886242752">
+    <state width="1398" height="193" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576900585312" />
+    <state width="1398" height="193" key="GridCell.Tab.0.center" timestamp="1576900585311">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576886242752" />
-    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1576886242751">
+    <state width="1398" height="193" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576900585311" />
+    <state width="1398" height="193" key="GridCell.Tab.0.left" timestamp="1576900585310">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576886242751" />
-    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1576886242752">
+    <state width="1398" height="193" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576900585310" />
+    <state width="1398" height="193" key="GridCell.Tab.0.right" timestamp="1576900585311">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="249" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576886242752" />
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1576880728721">
+    <state width="1398" height="193" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576900585311" />
+    <state width="1398" height="196" key="GridCell.Tab.1.bottom" timestamp="1576896831362">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576880728721" />
-    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1576880728720">
+    <state width="1398" height="196" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576896831362" />
+    <state width="1398" height="196" key="GridCell.Tab.1.center" timestamp="1576896831362">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1576880728720" />
-    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1576880728720">
+    <state width="1398" height="196" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1576896831362" />
+    <state width="1398" height="196" key="GridCell.Tab.1.left" timestamp="1576896831361">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1576880728720" />
-    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1576880728720">
+    <state width="1398" height="196" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1576896831361" />
+    <state width="1398" height="196" key="GridCell.Tab.1.right" timestamp="1576896831362">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1576880728720" />
+    <state width="1398" height="196" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1576896831362" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1576632205376">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -383,10 +389,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1576877411013" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1576842069392">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1576887157927">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1576842069392" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1576887157927" />
     <state x="458" y="273" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1576788626887">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -403,10 +409,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="dock-window-2/0.23.1440.877@0.23.1440.877" timestamp="1576627832821" />
-    <state x="312" y="191" width="816" height="540" key="find.popup" timestamp="1576880486468">
+    <state x="312" y="191" width="816" height="540" key="find.popup" timestamp="1576891722284">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="312" y="191" width="816" height="540" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1576880486468" />
+    <state x="312" y="191" width="816" height="540" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1576891722284" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -420,8 +426,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wolforgames_github_io$Run.coverage" NAME="Run Coverage Results" MODIFIED="1576854962230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wolforgames_github_io$Run_Flask.coverage" NAME="Run Flask Coverage Results" MODIFIED="1576884489325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wolforgames_github_io$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1576854949257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/wolforgames_github_io$Run_Flask.coverage" NAME="Run Flask Coverage Results" MODIFIED="1576900585304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wolforgames_github_io$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1576900534428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/wolforgames_github_io$final_work.coverage" NAME="final_work Coverage Results" MODIFIED="1576672147940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

@@ -31,3 +31,8 @@ class EditProfileForm(FlaskForm):
     description = TextAreaField('About me', validators=[Length(min=0, max=255)])
     # password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+
+class SearchForm(FlaskForm):
+    search = StringField('Search', validators=[DataRequired()])
+    submit = SubmitField('Search')
